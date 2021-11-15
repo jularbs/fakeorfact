@@ -1,5 +1,6 @@
 import "./styles.scss";
 import Link from "next/link";
+import { Col, Row } from "reactstrap";
 
 const SideBySide = ({ data, reverse }) => {
   const testData = {
@@ -17,24 +18,30 @@ const SideBySide = ({ data, reverse }) => {
   return (
     <>
       <div className={`side-by-side-container ${reverse ? "reverse" : ""}`}>
-        <div className="content-container">
-          {testData.logoLocation && (
-            <img src={testData.logoLocation} className="logo" />
-          )}
-          {testData.title && <div className="title">{testData.title}</div>}
-          {testData.content && (
-            <div className="content">{testData.content}</div>
-          )}
-          {testData.ctaLabel && testData.ctaLink && (
-            <Link href={testData.ctaLink}>
-              <button className="btn btn-cta">{testData.ctaLabel}</button>
-            </Link>
-          )}
-        </div>
-        <div
-          className="img-container"
-          style={{ backgroundImage: `url(${testData.imgLocation})` }}
-        ></div>
+        {/* <Row> */}
+        <Col lg={6} sm={12} className="px-0 justify-content-center">
+          <div className="content-container">
+            {testData.logoLocation && (
+              <img src={testData.logoLocation} className="logo" />
+            )}
+            {testData.title && <div className="title">{testData.title}</div>}
+            {testData.content && (
+              <div className="content">{testData.content}</div>
+            )}
+            {testData.ctaLabel && testData.ctaLink && (
+              <Link href={testData.ctaLink}>
+                <button className="btn btn-cta py-3">{testData.ctaLabel}</button>
+              </Link>
+            )}
+          </div>
+        </Col>
+        <Col lg={6} sm={12} className="px-0">
+          <div
+            className="img-container"
+            style={{ backgroundImage: `url(${testData.imgLocation})` }}
+          ></div>
+        </Col>
+        {/* </Row> */}
       </div>
     </>
   );

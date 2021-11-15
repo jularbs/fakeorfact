@@ -26,8 +26,6 @@ import PortraitCard from "components/Frontend/PortraitCard";
 function Index() {
   return (
     <>
-      <IndexNavbar />
-
       <div className="main-content">
         <HeroBranding />
         <Showcase />
@@ -43,25 +41,25 @@ function Index() {
             board of directors
           </h2>
           <Row className="justify-content-center">
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={4} sm={6} xs={12}>
+            <Col lg={4} sm={6} xs={6} className="px-0">
               <PortraitCard />
             </Col>
           </Row>
@@ -74,31 +72,30 @@ function Index() {
             Key officers
           </h2>
           <Row className="justify-content-center">
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
-            <Col lg={3} sm={6} xs={12}>
+            <Col lg={3} sm={4} xs={4} className="px-0">
               <PortraitCard />
             </Col>
           </Row>
         </div>
       </div>
-      <AuthFooter />
     </>
   );
 }
