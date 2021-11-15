@@ -1,0 +1,47 @@
+.side-by-side-container {
+  color: black;
+  display: flex;
+  //   min-height: 800px;
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex-basis: 50%;
+    justify-content: center;
+
+    .logo {
+      max-width: 600px;
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+    .title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    .content {
+      line-height: 2rem;
+      font-weight: 300;
+    }
+
+    .btn-cta {
+      align-self: flex-start;
+      margin-top: 2rem;
+      color: navy;
+      border-color: navy;
+      border-radius: 0;
+      padding: 1rem 10rem;
+    }
+  }
+
+  .img-container {
+    flex-basis: 50%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+  }
+}

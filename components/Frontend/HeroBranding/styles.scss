@@ -1,0 +1,50 @@
+.hero-branding-container {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 3rem;
+  align-items: center;
+
+  background-color: black;
+
+  .content-container,
+  .media-container {
+    padding: 1.5rem 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container {
+    color: white;
+    padding: 1.5rem 10%;
+    .title {
+      padding: 1rem;
+      .pre-title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+
+      .main-title {
+        font-size: 2.5rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+    .content {
+      padding: 1rem 0;
+      font-weight: 300;
+    }
+
+    .cta-button {
+      border-color: white;
+      padding: 1rem 8rem;
+      border-radius: 0;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin-top: 1rem;
+    }
+  }
+}
