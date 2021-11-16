@@ -46,9 +46,7 @@ const HeroMetrics = () => {
           <div className="title">Measuring Impact</div>
           <div className="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
         </div>
         <div className="metrics-container">{showMetrics()}</div>
