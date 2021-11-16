@@ -10,6 +10,7 @@
   background-size: cover;
   background-position: center;
 
+  overflow-x: hidden;
   .row {
     flex-grow: 1;
   }
@@ -40,7 +41,7 @@
 
       .main-title {
         font-size: 2.5rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
         text-transform: uppercase;
       }
     }
