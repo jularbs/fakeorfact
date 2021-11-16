@@ -119,7 +119,7 @@ const ContactUsSection = () => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11247.160729161205!2d120.97600021282183!3d14.558249809499188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cbd85bf67635%3A0x27e5bb9eddf2d86f!2sMBC%20Marketing%20Services%20Inc!5e0!3m2!1sen!2sph!4v1637062094768!5m2!1sen!2sph"
                   width="100%"
                   height="600px"
-                  allowfullscreen=""
+                  allowFullScreen=""
                   loading="lazy"
                   className="map"
                 ></iframe>

@@ -24,12 +24,17 @@ import SideBySide from "components/Frontend/SideBySide";
 import HeroBasic from "components/Frontend/HeroBasic";
 import ContactUsSection from "components/Frontend/Sections/ContactUsSection";
 import OrgChartSection from "components/Frontend/Sections/OrgChartSection";
-import CompanyCard from "components/Frontend/CompanyCard";
+import OurBusinessesSection from "components/Frontend/Sections/OurBusinessesSection";
+
+import GenericCard from "components/Frontend/GenericCard";
+import StoryCard from "components/Frontend/StoryCard";
 function Index() {
   return (
     <>
       <div className="main-content">
         <HeroBranding />
+        <StoryCard />
+
         <HeroBasic />
         <Showcase />
         <HeroMetrics />
@@ -38,68 +43,28 @@ function Index() {
         <SideBySide reverse />
         <OrgChartSection />
         <ContactUsSection />
-        <div className="business-showcase" style={{ padding: "3rem 3rem" }}>
-          <Row>
+        <OurBusinessesSection />
+        <div className="posts-section" style={{ overflowX: "hidden" }}>
+          <Row className="px-3">
             <Col lg={3}>
-              <CompanyCard
-                title="DZRH"
-                logoLocation="https://dzrh.com.ph/logo/logo_main.svg"
-                content="It's difficult to find examples of lorem ipsum in use before Letraset
-          made it popular as a dummy text in the 1960s, although McClintock says
-          he remembers coming across the lorem ipsum passage in a book of old
-          metal type samples. So far he hasn't relocated where he once saw the
-          passage, but the popularity of Cicero in the 15th century supports the
-          theory that the filler text has been used for centuries. And anyways,
-          as Cecil Adams reasoned, “[Do you really] think graphic arts supply
-          houses were hiring classics scholars in the 1960s?” Perhaps. But it
-          seems reasonable to imagine that there was a version in use far before
-          the age of Letraset."
-                ctaLabel="VISIT WEBSITE"
-                ctaLink="/"
-              />
+              <GenericCard />
             </Col>
             <Col lg={3}>
-              <CompanyCard
-                title="Yes FM"
-                logoLocation="https://www.yesthebest.com.ph/wp-content/uploads/2021/11/ytb-logo2021.png"
-                content="It's difficult to find examples of lorem ipsum in use before Letraset
-          made it popular as a dummy text in the 1960s, although McClintock says
-          he remembers coming.“[Do you really] think graphic arts supply
-          houses were hiring classics scholars in the 1960s?” Perhaps. But it
-          seems reasonable to imagine."
-                ctaLabel="VISIT WEBSITE"
-                ctaLink="/"
-              />
+              <GenericCard />
             </Col>
             <Col lg={3}>
-              <CompanyCard
-                title="Love Radio"
-                logoLocation="https://www.loveradio.com.ph/wp-content/uploads/2021/11/love-logo2021.png"
-                content="It's difficult to find examples of lorem ipsum in use before Letraset
-          made it popular as a dummy text in the 1960s, although McClintock says
-          he remembers coming.“[Do you really] think graphic arts supply
-          houses were hiring classics scholars in the 1960s?” Perhaps. But it
-          seems reasonable to imagine. [Do you really] think graphic arts supply
-          houses were hiring classics scholars in the 1960s?” Perhaps. But it
-          seems reasonable to imagine."
-                ctaLabel="VISIT WEBSITE"
-                ctaLink="/"
-              />
+              <GenericCard />
             </Col>
             <Col lg={3}>
-              <CompanyCard
-                title="Easy Rock"
-                logoLocation="https://www.easyrock.com.ph/wp-content/uploads/2021/11/easy-logo2021.png"
-                content="It's difficult to find examples of lorem ipsum in use before Letraset
-          made it popular as a dummy text in the 1960s, although McClintock says
-          he remembers coming.“[Do you really] think graphic arts supply
-          houses were hiring classics scholars in the 1960s?” Perhaps. But it
-          seems reasonable to imagine. [Do you really] think graphic arts supply
-          houses were hiring classics scholars in the 1960s?” Perhaps. But it
-          seems reasonable to imagine."
-                ctaLabel="VISIT WEBSITE"
-                ctaLink="/"
-              />
+              <GenericCard />
+            </Col>
+          </Row>
+          <Row className="px-3">
+            <Col lg={6}>
+              <GenericCard />
+            </Col>
+            <Col lg={6}>
+              <GenericCard />
             </Col>
           </Row>
         </div>

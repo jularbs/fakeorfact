@@ -1,0 +1,95 @@
+.storycard-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  .details-card {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 1rem;
+    background-color: #162570;
+    padding: 1.5rem;
+    color: white;
+    opacity: 0.9;
+
+    .label {
+      font-weight: 300;
+      font-size: 3rem;
+    }
+
+    .title {
+      margin: 0.5rem 0;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .excerpt {
+      font-weight: 300;
+      line-height: 2rem;
+    }
+  }
+
+  .img-container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    .img-wrapper {
+      margin-top: 30%;
+    }
+  }
+
+  .timeline-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+
+    .timeline-wrapper {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .icon {
+          color: white;
+          width: 20px;
+          height: 20px;
+      }
+      .timeline-item {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        &.active {
+          background-color: #0092dd;
+          border-color: #0092dd;
+        }
+
+        .label {
+          text-transform: uppercase;
+          position: absolute;
+          top: -25px;
+          color: white;
+          font-weight: 300;
+          font-size: 0.8rem;
+          white-space: wrap;
+        }
+      }
+
+      .timeline-line {
+        background-color: white;
+        flex-grow: 1;
+        height: 1px;
+      }
+    }
+  }
+}
