@@ -22,12 +22,14 @@ import HeroMetrics from "components/Frontend/HeroMetrics";
 import GenericCTA from "components/Frontend/GenericCTA";
 import SideBySide from "components/Frontend/SideBySide";
 import PortraitCard from "components/Frontend/PortraitCard";
+import HeroBasic from "components/Frontend/HeroBasic";
 
 function Index() {
   return (
     <>
       <div className="main-content">
         <HeroBranding />
+        <HeroBasic />
         <Showcase />
         <HeroMetrics />
         <GenericCTA />
