@@ -18,6 +18,9 @@ const HeroBasic = ({ title, content }) => {
         <div className="bg-overlay-blue" />
         <div className="title">{test.title}</div>
         <div className="content">{test.content}</div>
+        <div className="arrow-placement">
+          <div className="arrow-wrapper" />
+        </div>
       </div>
     </>
   );

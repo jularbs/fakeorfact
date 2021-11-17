@@ -50,6 +50,9 @@ const HeroMetrics = () => {
           </div>
         </div>
         <div className="metrics-container">{showMetrics()}</div>
+        <div className="arrow-placement">
+          <div className="arrow-wrapper" />
+        </div>
       </div>
     </>
   );

@@ -28,13 +28,16 @@ import OurBusinessesSection from "components/Frontend/Sections/OurBusinessesSect
 
 import GenericCard from "components/Frontend/GenericCard";
 import StoryCard from "components/Frontend/StoryCard";
+
+import { useRef } from "react";
+
 function Index() {
+  const storyCardRef = useRef(null);
   return (
     <>
       <div className="main-content">
-        <HeroBranding />
-        <StoryCard />
-
+        <HeroBranding next={storyCardRef} />
+        <StoryCard ref={storyCardRef} />
         <HeroBasic />
         <Showcase />
         <HeroMetrics />

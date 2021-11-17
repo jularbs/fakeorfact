@@ -29,6 +29,7 @@ const StoryCard = () => {
           </div>
         </div>
 
+
         <div className="img-container">
           <img className="img-wrapper" src={data.imgLocation} />
         </div>
@@ -42,7 +43,7 @@ const StoryCard = () => {
               <div className="label">1930's</div>
             </div>
             <div className="timeline-line"></div>
-            <div className="timeline-item">
+            <div className="timeline-item arrow-wrapper">
               <div className="label">1950's</div>
             </div>
             <div className="timeline-line"></div>

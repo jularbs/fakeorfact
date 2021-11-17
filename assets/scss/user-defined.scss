@@ -5,6 +5,40 @@ body {
   background-color: #f3f3f3 !important;
 }
 
+.arrow-wrapper {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    background-color: white;
+    transform-origin: 50% 50%;
+    transform: translate(8px, -(12px / 2)) rotate(-45deg);
+    left: 9px;
+    top: 26px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 1px;
+    background-color: white;
+    transform-origin: 50% 50%;
+    transform: translate(0, -(12px / 2)) rotate(45deg);
+    left: 9px;
+    top: 26px;
+  }
+}
+
 .black-gradient-overlay {
   position: absolute;
   left: 0;
