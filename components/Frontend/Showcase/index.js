@@ -2,7 +2,8 @@ import "./styles.scss";
 
 import { Row, Col } from "reactstrap";
 
-const Showcase = () => {
+import { forwardRef } from "react";
+const Showcase = forwardRef(({ next }, myRef) => {
   const data = [
     {
       bgLocation:
@@ -42,6 +43,12 @@ const Showcase = () => {
     },
   ];
 
+  const scrollNext = () => {
+    if (next && next.current) {
+      next.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   const showBusinesses = () => {
     return data.map((item, key) => {
       return (
@@ -60,9 +67,10 @@ const Showcase = () => {
       );
     });
   };
+
   return (
     <>
-      <div className="showcase-container">
+      <div className="showcase-container" ref={myRef}>
         <div className="header-container">
           <div className="header">Our Businesses</div>
           <div className="subheader">
@@ -72,9 +80,12 @@ const Showcase = () => {
         <div className="showcase-cards-container">
           <Row className="px-4">{showBusinesses()}</Row>
         </div>
+        <div className="arrow-placement">
+          <div className="arrow-wrapper bg-black" onClick={scrollNext} />
+        </div>
       </div>
     </>
   );
-};
+});
 
 export default Showcase;

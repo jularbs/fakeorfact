@@ -33,15 +33,18 @@ import { useRef } from "react";
 
 function Index() {
   const storyCardRef = useRef(null);
+  const showcaseRef = useRef(null);
+  const genericCtaRef = useRef(null);
+  const heroMetricsRef = useRef(null);
   return (
     <>
       <div className="main-content">
         <HeroBranding next={storyCardRef} />
         <StoryCard ref={storyCardRef} />
-        <HeroBasic />
-        <Showcase />
-        <HeroMetrics />
-        <GenericCTA />
+        <HeroBasic next={showcaseRef} />
+        <Showcase ref={showcaseRef} next={heroMetricsRef} />
+        <HeroMetrics ref={heroMetricsRef} next={genericCtaRef} />
+        <GenericCTA ref={genericCtaRef} />
         <SideBySide />
         <SideBySide reverse />
         <OrgChartSection />

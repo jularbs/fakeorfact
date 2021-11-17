@@ -1,6 +1,7 @@
+import { forwardRef } from "react";
 import "./styles.scss";
 
-const HeroMetrics = () => {
+const HeroMetrics = forwardRef(({ next }, myRef) => {
   const metricsData = [
     {
       figures: "46",
@@ -28,6 +29,12 @@ const HeroMetrics = () => {
     },
   ];
 
+  const scrollNext = () => {
+    if (next && next.current) {
+      next.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   const showMetrics = () => {
     return metricsData.map((item, key) => {
       return (
@@ -41,7 +48,7 @@ const HeroMetrics = () => {
 
   return (
     <>
-      <div className="hero-metrics-container">
+      <div className="hero-metrics-container" ref={myRef}>
         <div className="header-container">
           <div className="title">Measuring Impact</div>
           <div className="content">
@@ -51,11 +58,11 @@ const HeroMetrics = () => {
         </div>
         <div className="metrics-container">{showMetrics()}</div>
         <div className="arrow-placement">
-          <div className="arrow-wrapper" />
+          <div className="arrow-wrapper" onClick={scrollNext} />
         </div>
       </div>
     </>
   );
-};
+});
 
 export default HeroMetrics;

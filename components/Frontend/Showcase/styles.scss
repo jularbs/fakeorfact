@@ -1,10 +1,19 @@
 .showcase-container {
-  padding: 1rem 0 5rem 0;
+  position: relative;
+  padding: 1rem 0 8rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #f3f3f3;
   overflow-x: hidden;
+
+  .arrow-placement {
+    position: absolute;
+    left: 50%;
+    bottom: 2.5rem;
+    transform: translateX(-50%);
+  }
+
   .header-container {
     color: black;
     text-transform: uppercase;

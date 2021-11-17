@@ -1,7 +1,9 @@
 import "./styles.scss";
 
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
-const StoryCard = () => {
+import { forwardRef } from "react";
+
+const StoryCard = forwardRef(({}, myRef) => {
   const data = {
     bgLocation:
       "https://images.unsplash.com/photo-1578593139775-971441c3c518?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2690&q=80",
@@ -15,6 +17,7 @@ const StoryCard = () => {
       <div
         className="storycard-container"
         style={{ backgroundImage: `url(${data.bgLocation})` }}
+        ref={myRef}
       >
         <div className="black-gradient-overlay" />
         <div className="details-card">
@@ -28,7 +31,6 @@ const StoryCard = () => {
             After to explain his discovery.
           </div>
         </div>
-
 
         <div className="img-container">
           <img className="img-wrapper" src={data.imgLocation} />
@@ -69,6 +71,6 @@ const StoryCard = () => {
       </div>
     </>
   );
-};
+});
 
 export default StoryCard;

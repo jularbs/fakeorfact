@@ -11,10 +11,17 @@ const HeroBranding = ({
   ctaLink,
   media,
   bgImage,
+  next,
 }) => {
   const bgLocation =
     "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3432&q=80";
 
+  const scrollNext = () => {
+    if (next && next.current) {
+      console.log("REF WORKING");
+      next.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <>
       <div
@@ -24,7 +31,7 @@ const HeroBranding = ({
         <div className="bg-overlay-black" />
         <div className="bg-overlay-blue" />
         <div className="arrow-placement">
-          <div className="arrow-wrapper" />
+          <div className="arrow-wrapper" onClick={scrollNext} />
         </div>
         <Row>
           <Col lg={6} sm={12} className="w-100">
