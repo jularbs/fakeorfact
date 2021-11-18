@@ -1,0 +1,30 @@
+.navigation-container {
+  padding: 0 2rem;
+  display: flex;
+  height: 70px;
+  align-items: center;
+
+  .logo-container {
+    padding: 0 2rem;
+
+    .logo-wrapper {
+        height: 60px;
+    }
+  }
+
+  .nav-container {
+    flex-grow: 1;
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        color: #162570;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}

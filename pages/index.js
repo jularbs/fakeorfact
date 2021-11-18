@@ -28,7 +28,7 @@ import OurBusinessesSection from "components/Frontend/Sections/OurBusinessesSect
 import GenericCard from "components/Frontend/GenericCard";
 import StoryCard from "components/Frontend/StoryCard";
 import HeroBeforeAfter from "components/Frontend/HeroBeforeAfter";
-
+import Navigation from "components/Frontend/Navigation";
 import { useRef } from "react";
 
 function Index() {
@@ -36,11 +36,13 @@ function Index() {
   const showcaseRef = useRef(null);
   const genericCtaRef = useRef(null);
   const heroMetricsRef = useRef(null);
+  const heroBrandingRef = useRef(null);
   return (
     <>
+      <Navigation />
       <div className="main-content">
-        <HeroBeforeAfter />
-        <HeroBranding next={storyCardRef} />
+        <HeroBeforeAfter next={heroBrandingRef} />
+        <HeroBranding ref={heroBrandingRef} next={storyCardRef} />
         <StoryCard ref={storyCardRef} />
         <HeroBasic next={showcaseRef} />
         <Showcase ref={showcaseRef} next={heroMetricsRef} />
