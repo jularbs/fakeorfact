@@ -25,9 +25,9 @@ import HeroBasic from "components/Frontend/HeroBasic";
 import ContactUsSection from "components/Frontend/Sections/ContactUsSection";
 import OrgChartSection from "components/Frontend/Sections/OrgChartSection";
 import OurBusinessesSection from "components/Frontend/Sections/OurBusinessesSection";
-
 import GenericCard from "components/Frontend/GenericCard";
 import StoryCard from "components/Frontend/StoryCard";
+import HeroBeforeAfter from "components/Frontend/HeroBeforeAfter";
 
 import { useRef } from "react";
 
@@ -39,6 +39,7 @@ function Index() {
   return (
     <>
       <div className="main-content">
+        <HeroBeforeAfter />
         <HeroBranding next={storyCardRef} />
         <StoryCard ref={storyCardRef} />
         <HeroBasic next={showcaseRef} />
