@@ -42,39 +42,42 @@ const StoryCard = forwardRef(({}, myRef) => {
             </div>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <div className="timeline-container">
+              <div className="timeline-wrapper">
+                <IoChevronBackOutline className="icon" />
+                <div className="timeline-line"></div>
 
-        <div className="timeline-container">
-          <div className="timeline-wrapper">
-            <IoChevronBackOutline className="icon" />
-            <div className="timeline-line"></div>
-
-            <div className="timeline-item active">
-              <div className="label">1930's</div>
+                <div className="timeline-item active">
+                  <div className="label">1930's</div>
+                </div>
+                <div className="timeline-line"></div>
+                <div className="timeline-item arrow-wrapper">
+                  <div className="label">1950's</div>
+                </div>
+                <div className="timeline-line"></div>
+                <div className="timeline-item">
+                  <div className="label">1970's</div>
+                </div>
+                <div className="timeline-line"></div>
+                <div className="timeline-item">
+                  <div className="label">1970's</div>
+                </div>
+                <div className="timeline-line"></div>
+                <div className="timeline-item">
+                  <div className="label">1970's</div>
+                </div>
+                <div className="timeline-line"></div>
+                <div className="timeline-item">
+                  <div className="label">present</div>
+                </div>
+                <div className="timeline-line"></div>
+                <IoChevronForwardOutline className="icon" />
+              </div>
             </div>
-            <div className="timeline-line"></div>
-            <div className="timeline-item arrow-wrapper">
-              <div className="label">1950's</div>
-            </div>
-            <div className="timeline-line"></div>
-            <div className="timeline-item">
-              <div className="label">1970's</div>
-            </div>
-            <div className="timeline-line"></div>
-            <div className="timeline-item">
-              <div className="label">1970's</div>
-            </div>
-            <div className="timeline-line"></div>
-            <div className="timeline-item">
-              <div className="label">1970's</div>
-            </div>
-            <div className="timeline-line"></div>
-            <div className="timeline-item">
-              <div className="label">present</div>
-            </div>
-            <div className="timeline-line"></div>
-            <IoChevronForwardOutline className="icon" />
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </>
   );

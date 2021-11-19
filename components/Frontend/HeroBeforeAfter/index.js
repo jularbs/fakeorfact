@@ -8,7 +8,7 @@ const HeroBeforeAfter = forwardRef(({ next }, myRef) => {
   const beforeLocation =
     "https://images.unsplash.com/photo-1496116013258-67a0855f9f82?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80";
 
-  const [width, setWidth] = useState(97);
+  const [width, setWidth] = useState(95);
 
   const scrollNext = () => {
     if (next && next.current) {

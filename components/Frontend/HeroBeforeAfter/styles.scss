@@ -28,6 +28,7 @@
     -webkit-appearance: none;
     height: 100vh;
     width: 150px;
+    z-index: 3;
     background: transparent;
     cursor: ew-resize;
     margin-left: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
@@ -63,8 +64,8 @@
     &.foreground {
       position: relative;
       width: 95%;
-      max-width: 95%;
-      min-width: 5%;
+      max-width: 99%;
+      min-width: 0%;
       border-right: 2px solid white;
       overflow-x: hidden;
 
@@ -81,7 +82,7 @@
           padding: 2rem;
           width: 800px;
           color: white;
-          z-index: 99;
+          z-index: 1;
           height: 100%;
           display: flex;
           flex-direction: column;
