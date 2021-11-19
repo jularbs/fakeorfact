@@ -2,6 +2,7 @@ import "./styles.scss";
 
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import { forwardRef } from "react";
+import { Row, Col } from "reactstrap";
 
 const StoryCard = forwardRef(({}, myRef) => {
   const data = {
@@ -20,21 +21,27 @@ const StoryCard = forwardRef(({}, myRef) => {
         ref={myRef}
       >
         <div className="black-gradient-overlay" />
-        <div className="details-card">
-          <div className="label">1930's</div>
-          <div className="title">RH Goes Television</div>
-          <div className="excerpt">
-            And anyways, as Cecil Adams reasoned, “[Do you really] think graphic
-            arts supply houses were hiring classics scholars in the 1960s?”
-            Perhaps. But it seems reasonable to imagine that there was a version
-            in use far before the age of Letraset. McClintock wrote to Before &
-            After to explain his discovery.
-          </div>
-        </div>
 
-        <div className="img-container">
-          <img className="img-wrapper" src={data.imgLocation} />
-        </div>
+        <Row>
+          <Col lg={6} sm={12} xs={12}>
+            <div className="img-container">
+              <img className="img-wrapper" src={data.imgLocation} />
+            </div>
+          </Col>
+          <Col lg={6} sm={12} xs={12}>
+            <div className="details-card">
+              <div className="label">1930's</div>
+              <div className="title">RH Goes Television</div>
+              <div className="excerpt">
+                And anyways, as Cecil Adams reasoned, “[Do you really] think
+                graphic arts supply houses were hiring classics scholars in the
+                1960s?” Perhaps. But it seems reasonable to imagine that there
+                was a version in use far before the age of Letraset. McClintock
+                wrote to Before & After to explain his discovery.
+              </div>
+            </div>
+          </Col>
+        </Row>
 
         <div className="timeline-container">
           <div className="timeline-wrapper">

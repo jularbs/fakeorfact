@@ -1,7 +1,12 @@
 import "./styles.scss";
 
-const CustomArrow = ({ width, className }) => {
-  return <div className={`arrow-down ${className}`} />;
+const CustomArrow = ({ className, width }) => {
+  return (
+    <div
+      className={`arrow-down ${className}`}
+      style={{ "--arrow-width": `${width ? width : "60px"}` }}
+    />
+  );
 };
 
 export default CustomArrow;

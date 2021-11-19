@@ -18,16 +18,18 @@ const HeroBeforeAfter = forwardRef(({ next }, myRef) => {
   return (
     <>
       <div className="hero-beforeafter-container" ref={myRef}>
-        <div
-          className="hero-ba-item background"
-          style={{ backgroundImage: `url(${afterLocation})` }}
-        >
-          <div className="content">
-            <div className="header">NOW</div>
-            <div className="excerpt">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+        <div className="hero-ba-item background">
+          <div
+            className="img-container"
+            style={{ backgroundImage: `url(${afterLocation})` }}
+          >
+            <div className="content">
+              <div className="header">NOW</div>
+              <div className="excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </div>
             </div>
           </div>
         </div>
@@ -57,7 +59,7 @@ const HeroBeforeAfter = forwardRef(({ next }, myRef) => {
             <div>
               swipe <strong>now</strong>
             </div>
-            <CustomArrow className="mt-1" />
+            <CustomArrow className="mt-1" width={"120px"} />
           </div>
         </div>
         <input

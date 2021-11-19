@@ -3,6 +3,7 @@ import "./styles.scss";
 import { Row, Col } from "reactstrap";
 
 import { forwardRef } from "react";
+import CustomArrow from "../CustomArrow";
 const Showcase = forwardRef(({ next }, myRef) => {
   const data = [
     {
@@ -61,7 +62,7 @@ const Showcase = forwardRef(({ next }, myRef) => {
           >
             <div className="black-gradient-overlay" />
             <div className="logo">MBC Radio</div>
-            <div className="arrow-icon">&#10230;</div>
+            <CustomArrow className="reverse arrow-icon" />
           </div>
         </Col>
       );
