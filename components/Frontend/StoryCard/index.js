@@ -9,8 +9,6 @@ const StoryCard = forwardRef(({}, myRef) => {
     bgLocation:
       "https://images.unsplash.com/photo-1578593139775-971441c3c518?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2690&q=80",
     imgLocation:
-      //   "https://www.clipartmax.com/png/full/60-609954_apple-tree-montessori-school-school-logo-design-samples.png",
-      //   "https://dzrh.com.ph/logo/logo_main.svg",
       "https://upload.wikimedia.org/wikipedia/en/9/9d/DZMB_%28radio_station%29_logo.svg",
   };
   return (

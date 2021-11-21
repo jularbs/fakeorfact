@@ -40,7 +40,7 @@ function Index() {
   return (
     <>
       <Navigation />
-      <div className="main-content" style={{paddingTop: "60px"}}>
+      <div className="main">
         <HeroBeforeAfter next={heroBrandingRef} />
         <HeroBranding ref={heroBrandingRef} next={storyCardRef} />
         <StoryCard ref={storyCardRef} />
