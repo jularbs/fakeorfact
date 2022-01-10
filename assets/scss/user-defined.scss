@@ -51,6 +51,15 @@ body {
   width: 100%;
   height: 100%;
 }
+.white-gradient-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  background: linear-gradient(to top, white, transparent);
+  width: 100%;
+  height: 100%;
+}
 
 .black-gradient-overlay-to-left {
   position: absolute;

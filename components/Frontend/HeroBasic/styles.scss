@@ -1,5 +1,5 @@
 .hero-basic-container {
-    position: relative;
+  position: relative;
   padding: 15rem 2rem;
   text-align: center;
   color: white;
@@ -7,16 +7,16 @@
   background-size: cover;
   background-position: center;
 
-  
+  min-height: 100vh;
   .title {
-      position: relative;
+    position: relative;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 1.5rem;
   }
   .content {
-      position: relative;
+    position: relative;
 
     max-width: 700px;
     margin: 0 auto;
@@ -24,7 +24,7 @@
     line-height: 1.75rem;
   }
 
-  .arrow-placement{
+  .arrow-placement {
     position: absolute;
     bottom: 2.5rem;
     left: 50%;

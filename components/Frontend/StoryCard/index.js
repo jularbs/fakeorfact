@@ -20,62 +20,64 @@ const StoryCard = forwardRef(({}, myRef) => {
       >
         <div className="black-gradient-overlay" />
 
-        <Row>
-          <Col lg={6} sm={12} xs={12}>
-            <div className="img-container">
-              <img className="img-wrapper" src={data.imgLocation} />
-            </div>
-          </Col>
-          <Col lg={6} sm={12} xs={12}>
-            <div className="details-card">
-              <div className="label">1930's</div>
-              <div className="title">RH Goes Television</div>
-              <div className="excerpt">
-                And anyways, as Cecil Adams reasoned, “[Do you really] think
-                graphic arts supply houses were hiring classics scholars in the
-                1960s?” Perhaps. But it seems reasonable to imagine that there
-                was a version in use far before the age of Letraset. McClintock
-                wrote to Before & After to explain his discovery.
+        <div className="content">
+          <Row>
+            <Col lg={6} sm={12} xs={12}>
+              <div className="img-container">
+                <img className="img-wrapper" src={data.imgLocation} />
               </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <div className="timeline-container">
-              <div className="timeline-wrapper">
-                <IoChevronBackOutline className="icon" />
-                <div className="timeline-line"></div>
+            </Col>
+            <Col lg={6} sm={12} xs={12}>
+              <div className="details-card">
+                <div className="label">1930's</div>
+                <div className="title">RH Goes Television</div>
+                <div className="excerpt">
+                  And anyways, as Cecil Adams reasoned, “[Do you really] think
+                  graphic arts supply houses were hiring classics scholars in
+                  the 1960s?” Perhaps. But it seems reasonable to imagine that
+                  there was a version in use far before the age of Letraset.
+                  McClintock wrote to Before & After to explain his discovery.
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="timeline-container">
+                <div className="timeline-wrapper">
+                  <IoChevronBackOutline className="icon" />
+                  <div className="timeline-line"></div>
 
-                <div className="timeline-item active">
-                  <div className="label">1930's</div>
+                  <div className="timeline-item active">
+                    <div className="label">1930's</div>
+                  </div>
+                  <div className="timeline-line"></div>
+                  <div className="timeline-item arrow-wrapper">
+                    <div className="label">1950's</div>
+                  </div>
+                  <div className="timeline-line"></div>
+                  <div className="timeline-item">
+                    <div className="label">1970's</div>
+                  </div>
+                  <div className="timeline-line"></div>
+                  <div className="timeline-item">
+                    <div className="label">1970's</div>
+                  </div>
+                  <div className="timeline-line"></div>
+                  <div className="timeline-item">
+                    <div className="label">1970's</div>
+                  </div>
+                  <div className="timeline-line"></div>
+                  <div className="timeline-item">
+                    <div className="label">present</div>
+                  </div>
+                  <div className="timeline-line"></div>
+                  <IoChevronForwardOutline className="icon" />
                 </div>
-                <div className="timeline-line"></div>
-                <div className="timeline-item arrow-wrapper">
-                  <div className="label">1950's</div>
-                </div>
-                <div className="timeline-line"></div>
-                <div className="timeline-item">
-                  <div className="label">1970's</div>
-                </div>
-                <div className="timeline-line"></div>
-                <div className="timeline-item">
-                  <div className="label">1970's</div>
-                </div>
-                <div className="timeline-line"></div>
-                <div className="timeline-item">
-                  <div className="label">1970's</div>
-                </div>
-                <div className="timeline-line"></div>
-                <div className="timeline-item">
-                  <div className="label">present</div>
-                </div>
-                <div className="timeline-line"></div>
-                <IoChevronForwardOutline className="icon" />
               </div>
-            </div>
-          </Col>
-        </Row>
+            </Col>
+          </Row>
+        </div>
       </div>
     </>
   );
