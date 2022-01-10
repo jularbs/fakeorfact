@@ -1,18 +1,13 @@
 import "./styles.scss";
-
-import Link from "next/link";
 import { useState } from "react";
 
 const Navigation = () => {
-  const logoLocation =
-    "https://www.pinclipart.com/picdir/big/380-3806630_uploads-images-nufarm-logo-horizontal-green-rgb-nufarm.png";
-
   const [activeDropdown, setActiveDropdown] = useState("");
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   return (
     <>
       <div className="navigation-container">
-          {visible? "true": "false"}
+        <img src="/logos/main-color.png"  height="40px" style={{marginLeft: "20px"}} />
         <div
           className={`close-wrapper ${visible ? "open" : ""}`}
           onClick={() => {
@@ -23,7 +18,7 @@ const Navigation = () => {
           <div></div>
           <div></div>
         </div>
-        <nav className={`nav-wrapper ${visible ? "" : ""}`}>
+        <nav className={`nav-wrapper ${visible ? "true" : "false"}`}>
           <div className="nav-item"> {visible ? "true" : "false"}</div>
           <div
             className={`dropdown-nav ${
