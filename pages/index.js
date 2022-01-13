@@ -29,6 +29,7 @@ import GenericCard from "components/Frontend/GenericCard";
 import StoryCard from "components/Frontend/StoryCard";
 import HeroBeforeAfter from "components/Frontend/HeroBeforeAfter";
 import Navigation from "components/Frontend/Navigation";
+import FrontendHeader from "../components/Headers/FrontendHeader";
 import { useRef } from "react";
 
 function Index() {
@@ -39,7 +40,8 @@ function Index() {
   const heroBrandingRef = useRef(null);
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
+      <FrontendHeader />
       <div className="main">
         <HeroBeforeAfter next={heroBrandingRef} />
         <HeroBranding ref={heroBrandingRef} next={storyCardRef} />
