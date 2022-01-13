@@ -7,39 +7,33 @@ import CustomArrow from "../CustomArrow";
 const Showcase = forwardRef(({ next }, myRef) => {
   const data = [
     {
-      bgLocation:
-        "https://images.unsplash.com/photo-1598743400863-0201c7e1445b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
-      logoLocation: "/logos/mbc-radio.png",
+      bgLocation: "/bg/radio-bg.png",
+      logoLocation: "/logos/mbc-radio-white.png",
       link: "",
     },
     {
-      bgLocation:
-        "https://images.unsplash.com/photo-1563208964-a455770abf67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
-      logoLocation: "/logos/mbc-tv.png",
+      bgLocation: "/bg/tv-bg.png",
+      logoLocation: "/logos/mbc-tv-white.png",
       link: "",
     },
     {
-      bgLocation:
-        "https://images.unsplash.com/photo-1498049794561-7780e7231661?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
-      logoLocation: "/logos/mbc-events.png",
+      bgLocation: "/bg/events-bg.png",
+      logoLocation: "/logos/mbc-events-white.png",
       link: "",
     },
     {
-      bgLocation:
-        "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
-      logoLocation: "/logos/mbc-talents.png",
+      bgLocation: "/bg/talents-bg.png",
+      logoLocation: "/logos/mbc-talents-white.png",
       link: "",
     },
     {
-      bgLocation:
-        "https://images.unsplash.com/photo-1581092787765-e3feb951d987?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
-      logoLocation: "/logos/mbc-promos.png",
+      bgLocation: "/bg/promos-bg.png",
+      logoLocation: "/logos/mbc-promos-white.png",
       link: "",
     },
     {
-      bgLocation:
-        "https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
-      logoLocation: "/logos/mbc-digital.png",
+      bgLocation: "/bg/digital-bg.png",
+      logoLocation: "/logos/mbc-digital-white.png",
       link: "",
     },
   ];
@@ -60,7 +54,7 @@ const Showcase = forwardRef(({ next }, myRef) => {
               backgroundImage: `url(${item.bgLocation})`,
             }}
           >
-            <div className="white-gradient-overlay" />
+            <div className="black-gradient-overlay" />
             <div className="logo">
               <img src={item.logoLocation} height="50px" alt="" />
             </div>
