@@ -40,8 +40,8 @@ function Index() {
   const heroBrandingRef = useRef(null);
   return (
     <>
-      {/* <Navigation /> */}
-      <FrontendHeader />
+      <Navigation />
+      {/* <FrontendHeader /> */}
       <div className="main">
         <HeroBeforeAfter next={heroBrandingRef} />
         <HeroBranding ref={heroBrandingRef} next={storyCardRef} />

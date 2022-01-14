@@ -8,7 +8,7 @@ const OurBusinessesSection = () => {
     <>
       <div className="business-showcase" style={{ padding: "3rem 3rem" }}>
         <Row>
-          <Col lg={3}>
+          <Col lg={3} className="mb-3">
             <CompanyCard
               title="DZRH"
               logoLocation="https://dzrh.com.ph/logo/logo_main.svg"
@@ -26,7 +26,7 @@ const OurBusinessesSection = () => {
               ctaLink="/"
             />
           </Col>
-          <Col lg={3}>
+          <Col lg={3} className="mb-3">
             <CompanyCard
               title="Yes FM"
               logoLocation="https://www.yesthebest.com.ph/wp-content/uploads/2021/11/ytb-logo2021.png"
@@ -39,7 +39,7 @@ const OurBusinessesSection = () => {
               ctaLink="/"
             />
           </Col>
-          <Col lg={3}>
+          <Col lg={3} className="mb-3">
             <CompanyCard
               title="Love Radio"
               logoLocation="https://www.loveradio.com.ph/wp-content/uploads/2021/11/love-logo2021.png"
@@ -54,7 +54,7 @@ const OurBusinessesSection = () => {
               ctaLink="/"
             />
           </Col>
-          <Col lg={3}>
+          <Col lg={3} className="mb-3">
             <CompanyCard
               title="Easy Rock"
               logoLocation="https://www.easyrock.com.ph/wp-content/uploads/2021/11/easy-logo2021.png"
