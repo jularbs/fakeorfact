@@ -1,21 +1,8 @@
 import React from "react";
 import Link from "next/link";
 // reactstrap components
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  Container,
-  Row,
-  Col,
-  UncontrolledTooltip,
-} from "reactstrap";
+import { Row, Col } from "reactstrap";
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
-import AuthFooter from "components/Footers/AuthFooter.js";
-
 import HeroBranding from "components/Frontend/HeroBranding";
 import Showcase from "components/Frontend/Showcase";
 import HeroMetrics from "components/Frontend/HeroMetrics";

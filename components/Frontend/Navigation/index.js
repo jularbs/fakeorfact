@@ -16,6 +16,26 @@ const Navigation = () => {
           alt=""
         />
 
+        {/* DESKTOP NAVIGATION */}
+        <nav className="desktop-nav-wrapper">
+          <div className="nav-item active">OUR STORY</div>
+          <div className="nav-item">
+            OUR COMPANY
+            <div className="dropdown-wrapper">
+              <div className="dropdown-item">HISTORY</div>
+              <div className="dropdown-item">VISION AND CULTURE</div>
+              <div className="dropdown-item">LEADERSHIP</div>
+              <div className="dropdown-item">
+                CORPORATE SOCIAL RESPONSIBILITY
+              </div>
+              <div className="dropdown-item">INVESTOR RELATIONS</div>
+            </div>
+          </div>
+          <div className="nav-item">OUR BUSINESS</div>
+          <div className="nav-item">COLLABORATE WITH US</div>
+          <div className="nav-item">CONTACT US</div>
+        </nav>
+
         {/* MOBILE NAVIGATION */}
         <div
           className={`close-wrapper ${visible ? "open" : ""}`}
