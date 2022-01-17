@@ -30,19 +30,19 @@ function Index() {
       <Navigation />
       {/* <FrontendHeader /> */}
       <div className="main">
-        <HeroBeforeAfter next={heroBrandingRef} />
-        <HeroBranding ref={heroBrandingRef} next={storyCardRef} />
-        <StoryCard ref={storyCardRef} />
-        <HeroBasic next={showcaseRef} />
+        {/* <HeroBeforeAfter next={heroBrandingRef} /> */}
+        <HeroBranding ref={heroBrandingRef} next={showcaseRef} />
+        {/* <StoryCard ref={storyCardRef} /> */}
+        {/* <HeroBasic next={showcaseRef} /> */}
         <Showcase ref={showcaseRef} next={heroMetricsRef} />
         <HeroMetrics ref={heroMetricsRef} next={genericCtaRef} />
         <GenericCTA ref={genericCtaRef} />
-        <SideBySide />
-        <SideBySide reverse />
-        <OrgChartSection />
-        <ContactUsSection />
-        <OurBusinessesSection />
-        <div className="posts-section" style={{ overflowX: "hidden" }}>
+        {/* <SideBySide /> */}
+        {/* <SideBySide reverse /> */}
+        {/* <OrgChartSection /> */}
+        {/* <ContactUsSection /> */}
+        {/* <OurBusinessesSection /> */}
+        {/* <div className="posts-section" style={{ overflowX: "hidden" }}>
           <Row className="px-3">
             <Col lg={3}>
               <GenericCard />
@@ -65,7 +65,7 @@ function Index() {
               <GenericCard />
             </Col>
           </Row>
-        </div>
+        </div> */}
       </div>
     </>
   );

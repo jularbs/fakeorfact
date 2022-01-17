@@ -9,31 +9,70 @@ const Navigation = () => {
   return (
     <>
       <div className="navigation-container">
-        <img
-          src="/logos/main-color.png"
-          height="50px"
-          className="logo-wrapper"
-          alt=""
-        />
-
+        <Link href="/">
+          <img
+            src="/logos/main-color.png"
+            height="50px"
+            className="logo-wrapper"
+            alt=""
+          />
+        </Link>
         {/* DESKTOP NAVIGATION */}
         <nav className="desktop-nav-wrapper">
-          <div className="nav-item active">OUR STORY</div>
+          <Link href="/our-story">
+            <div className="nav-item">OUR STORY</div>
+          </Link>
           <div className="nav-item">
             OUR COMPANY
             <div className="dropdown-wrapper">
-              <div className="dropdown-item">HISTORY</div>
-              <div className="dropdown-item">VISION AND CULTURE</div>
-              <div className="dropdown-item">LEADERSHIP</div>
-              <div className="dropdown-item">
-                CORPORATE SOCIAL RESPONSIBILITY
-              </div>
-              <div className="dropdown-item">INVESTOR RELATIONS</div>
+              <Link href="/our-company">
+                <div className="dropdown-item">HISTORY</div>
+              </Link>
+              <Link href="/our-company/vision-and-culture">
+                <div className="dropdown-item">VISION AND CULTURE</div>
+              </Link>
+              <Link href="/our-company/leadership">
+                <div className="dropdown-item">LEADERSHIP</div>
+              </Link>
+              <Link href="/our-company/csr">
+                <div className="dropdown-item">
+                  CORPORATE SOCIAL RESPONSIBILITY
+                </div>
+              </Link>
+              <Link href="investor-relations">
+                <div className="dropdown-item">INVESTOR RELATIONS</div>
+              </Link>
             </div>
           </div>
-          <div className="nav-item">OUR BUSINESS</div>
-          <div className="nav-item">COLLABORATE WITH US</div>
-          <div className="nav-item">CONTACT US</div>
+          <div className="nav-item">
+            OUR BUSINESS
+            <div className="dropdown-wrapper">
+              <Link href="/our-businesses/radio">
+                <div className="dropdown-item">RADIO</div>
+              </Link>
+              <Link href="/our-businesses/tv">
+                <div className="dropdown-item">TV</div>
+              </Link>
+              <Link href="/our-businesses/digital">
+                <div className="dropdown-item">DIGITAL</div>
+              </Link>
+              <Link href="/our-businesses/events">
+                <div className="dropdown-item">EVENTS</div>
+              </Link>
+              <Link href="/our-businesses/promos">
+                <div className="dropdown-item">PROMOS</div>
+              </Link>
+              <Link href="/our-businesses/talents">
+                <div className="dropdown-item">TALENTS</div>
+              </Link>
+            </div>
+          </div>
+          <Link href="/collaborate-with-us">
+            <div className="nav-item">COLLABORATE WITH US</div>
+          </Link>
+          <Link href="/contact-us">
+            <div className="nav-item">CONTACT US</div>
+          </Link>
         </nav>
 
         {/* MOBILE NAVIGATION */}
@@ -47,9 +86,11 @@ const Navigation = () => {
           <div></div>
           <div></div>
         </div>
-        <nav className={`nav-wrapper ${visible ? "visible" : ""}`}>
-          <div className="nav-item">Our Story</div>
 
+        <nav className={`nav-wrapper ${visible ? "visible" : ""}`}>
+          <Link href="/our-story">
+            <div className="nav-item">Our Story</div>
+          </Link>
           <div
             className={`dropdown-nav ${
               activeDropdown == "our-company" ? "active" : ""
@@ -62,19 +103,63 @@ const Navigation = () => {
           >
             <div className="nav-item">Our Company</div>
             <div className="dropdown-nav-wrapper">
-              <div className="dropdown-item">History</div>
-              <div className="dropdown-item">Vision and Culture</div>
-              <div className="dropdown-item">Leadership</div>
-              <div className="dropdown-item">
-                Corporate Social Responsibility
-              </div>
-              <div className="dropdown-item">Investor Relations</div>
+              <Link href="/our-company">
+                <div className="dropdown-item">History</div>
+              </Link>
+              <Link href="/our-company/vision-and-culture">
+                <div className="dropdown-item">Vision and Culture</div>
+              </Link>
+              <Link href="/our-company/leadership">
+                <div className="dropdown-item">Leadership</div>
+              </Link>
+              <Link href="/our-company/csr">
+                <div className="dropdown-item">
+                  Corporate Social Responsibility
+                </div>
+              </Link>
+              <Link href="/our-company/investor-relations">
+                <div className="dropdown-item">Investor Relations</div>
+              </Link>
             </div>
           </div>
-          <div className="nav-item">Our Businesses</div>
-
-          <div className="nav-item">Collaborate With Us</div>
-          <div className="nav-item">Contact Us</div>
+          <div
+            className={`dropdown-nav ${
+              activeDropdown == "our-business" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveDropdown(
+                `${activeDropdown == "our-business" ? "" : "our-business"}`
+              );
+            }}
+          >
+            <div className="nav-item">Our Business</div>
+            <div className="dropdown-nav-wrapper">
+              <Link href="/our-businesses/radio">
+                <div className="dropdown-item">RADIO</div>
+              </Link>
+              <Link href="/our-businesses/tv">
+                <div className="dropdown-item">TV</div>
+              </Link>
+              <Link href="/our-businesses/digital">
+                <div className="dropdown-item">DIGITAL</div>
+              </Link>
+              <Link href="/our-businesses/events">
+                <div className="dropdown-item">EVENTS</div>
+              </Link>
+              <Link href="/our-businesses/promos">
+                <div className="dropdown-item">PROMOS</div>
+              </Link>
+              <Link href="/our-businesses/talents">
+                <div className="dropdown-item">TALENTS</div>
+              </Link>
+            </div>
+          </div>
+          <Link href="/collaborate-with-us">
+            <div className="nav-item">Collaborate With Us</div>
+          </Link>
+          <Link href="/contact-us">
+            <div className="nav-item">Contact Us</div>
+          </Link>
         </nav>
       </div>
     </>
