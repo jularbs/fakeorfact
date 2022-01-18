@@ -11,6 +11,9 @@ const HeroBranding = forwardRef(
     const bgLocation =
       "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3432&q=80";
 
+    const logoLocation = "/logos/mbc-radio-white.svg";
+    const buttonText = "learn about us";
+
     const scrollNext = () => {
       if (next && next.current) {
         console.log("REF WORKING");
@@ -32,12 +35,12 @@ const HeroBranding = forwardRef(
           <Row>
             <Col lg={6} sm={12} className="w-100">
               <div className="content-container justify-content-center">
-                <div className="title">
+                <div className="title" style={{ width: "100%" }}>
                   <div className="pre-title">We are</div>
                   <div className="main-title">
                     <strong>MBC</strong> Media Group
                   </div>
-                  {/* <div className="logo">Hellow</div> */}
+                  {/* <img className="logo" src={logoLocation} width="100%" /> */}
                 </div>
                 <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -45,7 +48,7 @@ const HeroBranding = forwardRef(
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </div>
                 <button className="cta-button btn btn-block">
-                  Collaborate with us
+                  {buttonText}
                 </button>
               </div>
             </Col>

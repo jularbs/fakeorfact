@@ -68,6 +68,7 @@
     "react-select2-wrapper": "1.0.4-beta6",
     "react-signature-canvas": "^1.0.3",
     "react-to-print": "2.12.2",
+    "react-visibility-sensor": "^5.1.1",
     "reactstrap": "8.9.0",
     "slugify": "^1.6.2",
     "tinymce": "^5.10.0",

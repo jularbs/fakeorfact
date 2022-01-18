@@ -2,8 +2,6 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-
 // plugins styles from node_modules
 import "react-notification-alert/dist/animate.css";
 import "react-perfect-scrollbar/dist/css/styles.css";
