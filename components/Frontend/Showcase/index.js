@@ -8,32 +8,32 @@ const Showcase = forwardRef(({ next }, myRef) => {
   const data = [
     {
       bgLocation: "/bg/radio-bg.png",
-      logoLocation: "/logos/mbc-radio-white.png",
+      logoLocation: "/logos/mbc-radio-white.svg",
       link: "",
     },
     {
       bgLocation: "/bg/tv-bg.png",
-      logoLocation: "/logos/mbc-tv-white.png",
+      logoLocation: "/logos/mbc-tv-white.svg",
       link: "",
     },
     {
       bgLocation: "/bg/events-bg.png",
-      logoLocation: "/logos/mbc-events-white.png",
+      logoLocation: "/logos/mbc-events-white.svg",
       link: "",
     },
     {
       bgLocation: "/bg/talents-bg.png",
-      logoLocation: "/logos/mbc-talents-white.png",
+      logoLocation: "/logos/mbc-talents-white.svg",
       link: "",
     },
     {
       bgLocation: "/bg/promos-bg.png",
-      logoLocation: "/logos/mbc-promos-white.png",
+      logoLocation: "/logos/mbc-promos-white.svg",
       link: "",
     },
     {
       bgLocation: "/bg/digital-bg.png",
-      logoLocation: "/logos/mbc-digital-white.png",
+      logoLocation: "/logos/mbc-digital-white.svg",
       link: "",
     },
   ];

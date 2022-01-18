@@ -3,6 +3,7 @@ import "./styles.scss";
 import { forwardRef } from "react";
 import ReactPlayer from "react-player/lazy";
 import { Row, Col } from "reactstrap";
+import Link from "next/link";
 const HeroBranding = forwardRef(
   (
     { preTitle, title, logo, content, ctaName, ctaLink, media, bgImage, next },
@@ -13,7 +14,8 @@ const HeroBranding = forwardRef(
 
     const logoLocation = "/logos/mbc-radio-white.svg";
     const buttonText = "learn about us";
-
+    const sampleContent =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.";
     const scrollNext = () => {
       if (next && next.current) {
         console.log("REF WORKING");
@@ -42,14 +44,12 @@ const HeroBranding = forwardRef(
                   </div>
                   {/* <img className="logo" src={logoLocation} width="100%" /> */}
                 </div>
-                <div className="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </div>
-                <button className="cta-button btn btn-block">
-                  {buttonText}
-                </button>
+                <div className="content">{sampleContent}</div>
+                <Link href={"/"}>
+                  <button className="cta-button btn btn-block">
+                    {buttonText}
+                  </button>
+                </Link>
               </div>
             </Col>
             <Col lg={6} sm={12} className="w-100">
