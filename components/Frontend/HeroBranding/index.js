@@ -9,13 +9,16 @@ const HeroBranding = forwardRef(
     { preTitle, title, logo, content, ctaName, ctaLink, media, bgImage, next },
     myRef
   ) => {
-    const bgLocation =
-      "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3432&q=80";
+    const bgLocation = "/bg/index-branding-bg.svg";
 
-    const logoLocation = "/logos/mbc-radio-white.svg";
+    const logoLocation = "/common/mbc-media-group.svg";
     const buttonText = "learn about us";
     const sampleContent =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.";
+    const sampleCtaLink = "/";
+    const sampleVideoLink = "https://www.youtube.com/watch?v=6fWU0e6W8QY";
+    const sampleTitle = "";
+
     const scrollNext = () => {
       if (next && next.current) {
         console.log("REF WORKING");
@@ -29,7 +32,6 @@ const HeroBranding = forwardRef(
           style={{ backgroundImage: `url(${bgLocation})` }}
           ref={myRef}
         >
-          <div className="bg-overlay-black" />
           <div className="bg-overlay-blue" />
           <div className="arrow-placement">
             <div className="arrow-wrapper" onClick={scrollNext} />
@@ -38,16 +40,14 @@ const HeroBranding = forwardRef(
             <Col lg={6} sm={12} className="w-100">
               <div className="content-container justify-content-center">
                 <div className="title" style={{ width: "100%" }}>
-                  <div className="pre-title">We are</div>
-                  <div className="main-title">
-                    <strong>MBC</strong> Media Group
-                  </div>
-                  {/* <img className="logo" src={logoLocation} width="100%" /> */}
+                  <div className="main-title">{sampleTitle}</div>
+                  <img className="logo" src={logoLocation} width="100%" />
                 </div>
                 <div className="content">{sampleContent}</div>
-                <Link href={"/"}>
+                <Link href={sampleCtaLink}>
                   <button className="cta-button btn btn-block">
-                    {buttonText}
+                    <span>{buttonText}</span>{" "}
+                    <img src="/common/arrow-white.svg" />
                   </button>
                 </Link>
               </div>
@@ -56,7 +56,7 @@ const HeroBranding = forwardRef(
               <div className="media-container">
                 <div className="embed-responsive embed-responsive-16by9">
                   <ReactPlayer
-                    url="https://www.youtube.com/watch?v=6fWU0e6W8QY"
+                    url={sampleVideoLink}
                     className="player"
                     width="100%"
                     height="100%"
