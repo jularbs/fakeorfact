@@ -24,9 +24,9 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+            href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
           />
-          <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+          <script src="https://github.hubspot.com/odometer/odometer.js"></script>
         </Head>
         <body className="g-sidenav-show g-sidenav-pinned">
           <div id="page-transition"></div>
