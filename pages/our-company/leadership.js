@@ -4,18 +4,25 @@ import Navigation from "components/Frontend/Navigation";
 import HeroBasic from "components/Frontend/HeroBasic";
 import OrgChartSection from "components/Frontend/Sections/OrgChartSection";
 
-import SideBySide from "components/Frontend/SideBySide";
-
 import { useRef } from "react";
 
 function LeadershipPage() {
-  const beforeAfterRef = useRef(null);
+  const orgSection = useRef(null);
   return (
     <>
       <Navigation />
       <div className="main">
-        <HeroBasic next={beforeAfterRef} />
-        <OrgChartSection />
+        <HeroBasic
+          next={orgSection}
+          black
+          data={{
+            title: "Leadership",
+            content:
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.",
+            bgLocation: "/bg/our-leadership.png",
+          }}
+        />
+        <OrgChartSection ref={orgSection} />
       </div>
     </>
   );

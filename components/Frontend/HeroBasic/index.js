@@ -2,7 +2,7 @@ import "./styles.scss";
 
 import { forwardRef, useState } from "react";
 
-const HeroBasic = forwardRef(({ title, content, next }, myRef) => {
+const HeroBasic = forwardRef(({ data, black, blue, next }, myRef) => {
   const test = {
     bgLocation:
       "https://images.unsplash.com/photo-1520482068820-852e8e63541b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2669&q=80",
@@ -21,13 +21,13 @@ const HeroBasic = forwardRef(({ title, content, next }, myRef) => {
     <>
       <div
         className="hero-basic-container"
-        style={{ backgroundImage: `url(${test.bgLocation})` }}
+        style={{ backgroundImage: `url(${data.bgLocation})` }}
         ref={myRef}
       >
-        <div className="bg-overlay-black" />
-        <div className="bg-overlay-blue" />
-        <div className="title">{test.title}</div>
-        <div className="content">{test.content}</div>
+        {black && <div className="bg-overlay-black" />}
+        {blue && <div className="bg-overlay-blue" />}
+        <div className="title">{data.title}</div>
+        <div className="content">{data.content}</div>
         <div className="arrow-placement">
           <div className="arrow-wrapper" onClick={scrollNext} />
         </div>

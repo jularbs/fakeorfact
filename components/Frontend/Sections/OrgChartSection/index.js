@@ -1,11 +1,11 @@
 import "./styles.scss";
-
+import { forwardRef } from "react";
 import { Row, Col } from "reactstrap";
 import PortraitCard from "components/Frontend/PortraitCard";
-const OrgChartSection = () => {
+const OrgChartSection = forwardRef(({}, myRef) => {
   return (
     <>
-      <div className="orgchart-section">
+      <div className="orgchart-section" ref={myRef}>
         <div
           className="org-chart"
           style={{ maxWidth: "1300px", margin: "0 auto", padding: "5rem 1rem" }}
@@ -71,6 +71,6 @@ const OrgChartSection = () => {
       </div>
     </>
   );
-};
+});
 
 export default OrgChartSection;

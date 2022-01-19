@@ -77,9 +77,11 @@ const Showcase = forwardRef(({ next }, myRef) => {
         <div className="showcase-cards-container">
           <Row className="px-4">{showBusinesses()}</Row>
         </div>
-        <div className="arrow-placement">
-          <div className="arrow-wrapper bg-black" onClick={scrollNext} />
-        </div>
+        {next && (
+          <div className="arrow-placement">
+            <div className="arrow-wrapper bg-black" onClick={scrollNext} />
+          </div>
+        )}
       </div>
     </>
   );

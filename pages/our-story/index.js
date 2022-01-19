@@ -13,9 +13,29 @@ function OurStoryPage() {
     <>
       <Navigation />
       <div className="main">
-        <HeroBasic next={beforeAfterRef} />
+        <HeroBasic
+          next={beforeAfterRef}
+          blue
+          data={{
+            title: "our story",
+            content:
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.",
+            bgLocation:
+              "https://images.unsplash.com/photo-1520482068820-852e8e63541b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2669&q=80",
+          }}
+        />
         <HeroBeforeAfter ref={beforeAfterRef} next={leadershipRef} />
-        <HeroBasic ref={leadershipRef}/>
+        <HeroBasic
+          ref={leadershipRef}
+          black
+          data={{
+            title: "our leadership",
+            content:
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.",
+            bgLocation:
+              "/bg/our-leadership.png",
+          }}
+        />
       </div>
     </>
   );

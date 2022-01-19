@@ -1,50 +1,55 @@
 import "./styles.scss";
+import { forwardRef } from "react";
 import Link from "next/link";
 import { Col, Row } from "reactstrap";
 
-const SideBySide = ({ data, reverse }) => {
-  const testData = {
-    imgLocation:
-      "https://images.unsplash.com/photo-1527821468487-b724210d296a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80",
-    logoLocation:
-      "/logos/mbc-long.png",
-    title: "Our Mission",
-    content:
-      "Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero. It's difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. So far he hasn't relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.",
-    ctaLabel: "Inquire Now",
-    ctaLink: "/",
+const SideBySide = forwardRef(({ next, data, reverse }, myRef) => {
+  const scrollNext = () => {
+    if (next && next.current) {
+      next.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
-
   return (
     <>
-      <div className={`side-by-side-container ${reverse ? "reverse" : ""}`}>
-        {/* <Row> */}
+      <div
+        className={`side-by-side-container ${reverse ? "reverse" : ""}`}
+        ref={myRef}
+      >
         <Col lg={6} sm={12} className="px-0 justify-content-center">
           <div className="content-container">
-            {testData.logoLocation && (
-              <img src={testData.logoLocation} className="logo" />
+            {data && data.logoLocation && (
+              <img src={data.logoLocation} className="logo" />
             )}
-            {testData.title && <div className="title">{testData.title}</div>}
-            {testData.content && (
-              <div className="content">{testData.content}</div>
+            {data && data.title && <div className="title">{data.title}</div>}
+            {data && data.content && (
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: data.content }}
+              />
             )}
-            {testData.ctaLabel && testData.ctaLink && (
-              <Link href={testData.ctaLink}>
-                <button className="btn btn-cta py-3">{testData.ctaLabel}</button>
+            {data && data.ctaLabel && data.ctaLink && (
+              <Link href={data.ctaLink}>
+                <button className="btn btn-cta py-3">{data.ctaLabel}</button>
               </Link>
             )}
           </div>
         </Col>
         <Col lg={6} sm={12} className="px-0">
-          <div
-            className="img-container"
-            style={{ backgroundImage: `url(${testData.imgLocation})` }}
-          ></div>
+          {data && data.imgLocation && (
+            <div
+              className="img-container"
+              style={{ backgroundImage: `url(${data.imgLocation})` }}
+            ></div>
+          )}
         </Col>
-        {/* </Row> */}
+        {next && (
+          <div className="arrow-placement">
+            <div className="arrow-wrapper bg-black" onClick={scrollNext} />
+          </div>
+        )}
       </div>
     </>
   );
-};
+});
 
 export default SideBySide;
