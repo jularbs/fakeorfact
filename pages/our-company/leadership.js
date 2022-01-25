@@ -23,6 +23,7 @@ function LeadershipPage() {
           }}
         />
         <OrgChartSection ref={orgSection} />
+        <img src="/bg/org-chart.svg" width="100%"/>
       </div>
     </>
   );

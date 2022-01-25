@@ -32,10 +32,31 @@ function OurStoryPage() {
             title: "our leadership",
             content:
               "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.",
-            bgLocation:
-              "/bg/our-leadership.png",
+            bgLocation: "/bg/our-leadership.png",
           }}
         />
+        <div className="sama-sama-container">
+          <div className="content">
+            <img src="/logos/main-color.png" width="400px" alt="" />
+            <div className="excerpt">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient.
+            </div>
+          </div>
+          <img
+            src="/bg/sama-sama-desktop.svg"
+            width="100%"
+            className="desktop-bg"
+            alt=""
+          />
+          <img
+            src="/bg/sama-sama-mobile.svg"
+            width="100%"
+            className="mobile-bg"
+            alt=""
+          />
+        </div>
       </div>
     </>
   );
