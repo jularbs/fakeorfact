@@ -15,7 +15,7 @@ const SideBySide = forwardRef(({ next, data, reverse }, myRef) => {
         className={`side-by-side-container ${reverse ? "reverse" : ""}`}
         ref={myRef}
       >
-        <Col lg={6} sm={12} className="px-0 justify-content-center">
+        <Col lg={6} sm={12} className="px-0 d-flex justify-content-center align-items-center">
           <div className="content-container">
             {data && data.logoLocation && (
               <img src={data.logoLocation} className="logo" />

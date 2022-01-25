@@ -12,11 +12,21 @@ import { useRef } from "react";
 
 function TalentsPage() {
   const beforeAfterRef = useRef(null);
+    const data = {
+      logoLocation: "/logos/mbc-talents-white.svg",
+      bgLocation: "/bg/index-branding-bg.svg",
+      title: "",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      ctaText: "learn about us",
+      ctaLink: "/",
+      videoLink: "https://www.youtube.com/watch?v=6fWU0e6W8QY",
+    };
   return (
     <>
       <Navigation />
       <div className="main">
-        <HeroBranding next={beforeAfterRef} />
+        <HeroBranding next={beforeAfterRef} data={data}/>
         <OurBusinessesSection />
         <div className="posts-section" style={{ overflowX: "hidden" }}>
           <Row className="px-3">
