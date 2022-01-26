@@ -5,6 +5,7 @@ import HeroBasic from "components/Frontend/HeroBasic";
 import HeroBeforeAfter from "components/Frontend/HeroBeforeAfter";
 
 import { useRef } from "react";
+import SamasamaHero from "components/Frontend/SamasamaHero";
 
 function OurStoryPage() {
   const beforeAfterRef = useRef(null);
@@ -38,33 +39,15 @@ function OurStoryPage() {
             bgLocation: "/bg/our-leadership.png",
           }}
         />
-        <div className="sama-sama-container" ref={samasamaRef}>
-          <div className="content">
-            <img
-              src="/logos/main-color.png"
-              width="100%"
-              className="logo-img"
-              alt=""
-            />
-            <div className="excerpt">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient.
-            </div>
-          </div>
-          <img
-            src="/bg/sama-sama-desktop.svg"
-            width="100%"
-            className="desktop-bg"
-            alt=""
-          />
-          <img
-            src="/bg/sama-sama-mobile.svg"
-            width="100%"
-            className="mobile-bg"
-            alt=""
-          />
-        </div>
+
+        <SamasamaHero
+          ref={samasamaRef}
+          data={{
+            imgLocation: "logos/main-color.png",
+            excerpt:
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.",
+          }}
+        />
       </div>
     </>
   );

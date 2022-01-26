@@ -2,6 +2,8 @@ import React from "react";
 import SideBySide from "components/Frontend/SideBySide";
 import Navigation from "components/Frontend/Navigation";
 import HeroBasic from "components/Frontend/HeroBasic";
+import SamasamaHero from "components/Frontend/SamasamaHero";
+
 import { useRef } from "react";
 function csrPage() {
   const firstRef = useRef(null);
@@ -12,15 +14,13 @@ function csrPage() {
     <>
       <Navigation />
       <div className="main">
-        <HeroBasic
+        <SamasamaHero
           next={firstRef}
-          blue
-          black
+          withLogo
           data={{
-            title: "Our brand vision and culture",
-            content:
+            excerpt:
               "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.",
-            bgLocation: "/bg/vnc.png",
+            imgLocation: "/logos/main-color.png",
           }}
         />
         <SideBySide
