@@ -4,10 +4,6 @@
   position: relative;
   background-color: white;
 
-  @include for-tablet-landscape-up {
-    // min-height: 100vh;
-  }
-
   .arrow-placement {
     position: absolute;
     bottom: 1.5rem;
@@ -20,8 +16,6 @@
     display: none;
     @include for-tablet-landscape-up {
       display: flex;
-    //   max-width: 100%;
-    //   max-height: 100%;
     }
   }
 
