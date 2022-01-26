@@ -46,7 +46,6 @@ function csrPage() {
         />
         <SideBySide
           ref={thirdRef}
-          reverse
           data={{
             imgLocation: "/bg/our-mission.png",
             title: "Our Mission",
