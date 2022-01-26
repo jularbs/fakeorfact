@@ -9,6 +9,8 @@ import { useRef } from "react";
 function OurStoryPage() {
   const beforeAfterRef = useRef(null);
   const leadershipRef = useRef(null);
+  const samasamaRef = useRef(null);
+
   return (
     <>
       <Navigation />
@@ -27,6 +29,7 @@ function OurStoryPage() {
         <HeroBeforeAfter ref={beforeAfterRef} next={leadershipRef} />
         <HeroBasic
           ref={leadershipRef}
+          next={samasamaRef}
           black
           data={{
             title: "our leadership",
@@ -35,9 +38,14 @@ function OurStoryPage() {
             bgLocation: "/bg/our-leadership.png",
           }}
         />
-        <div className="sama-sama-container">
+        <div className="sama-sama-container" ref={samasamaRef}>
           <div className="content">
-            <img src="/logos/main-color.png" width="400px" alt="" />
+            <img
+              src="/logos/main-color.png"
+              width="100%"
+              className="logo-img"
+              alt=""
+            />
             <div className="excerpt">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque

@@ -17,6 +17,8 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/scss/nextjs-argon-dashboard-pro.scss?v1.1.0";
 import "assets/scss/user-defined.scss";
 
+import Footer from "components/Frontend/Footer";
+
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
@@ -44,6 +46,8 @@ export default class MyApp extends App {
         </Head>
         <Layout>
           <Component {...pageProps} />
+
+          <Footer></Footer>
         </Layout>
       </React.Fragment>
     );
