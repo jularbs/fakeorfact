@@ -11,7 +11,7 @@ import ContactUsSection from "components/Frontend/Sections/ContactUsSection";
 import { useRef } from "react";
 
 function RadioPage() {
-  const beforeAfterRef = useRef(null);
+  const stationsRef = useRef(null);
 
   const data = {
     logoLocation: "/logos/mbc-radio-white.svg",
@@ -27,35 +27,8 @@ function RadioPage() {
     <>
       <Navigation />
       <div className="main">
-        <HeroBranding next={beforeAfterRef} data={data} />
-        <OurBusinessesSection />
-        <div className="posts-section" style={{ overflowX: "hidden" }}>
-          <Row className="px-3">
-            <Col lg={3}>
-              <GenericCard />
-            </Col>
-            <Col lg={3}>
-              <GenericCard />
-            </Col>
-            <Col lg={3}>
-              <GenericCard />
-            </Col>
-            <Col lg={3}>
-              <GenericCard />
-            </Col>
-          </Row>
-          <Row className="px-3">
-            <Col lg={6}>
-              <GenericCard />
-            </Col>
-            <Col lg={6}>
-              <GenericCard />
-            </Col>
-          </Row>
-        </div>
-        <SideBySide />
-        <SideBySide reverse />
-        <SideBySide />
+        <HeroBranding next={stationsRef} data={data} />
+        <OurBusinessesSection ref={stationsRef} />
         <ContactUsSection />
       </div>
     </>

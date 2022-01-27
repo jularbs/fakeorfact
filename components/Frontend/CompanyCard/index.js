@@ -4,7 +4,9 @@ const CompanyCard = ({ logoLocation, title, content, ctaLabel, ctaLink }) => {
     <>
       <div className="company-card-container">
         <div>
-          <img src={logoLocation} alt="" className="logo-img" />
+          <div className="logo-wrapper">
+            <img src={logoLocation} alt="" className="logo-img" />
+          </div>
           <div className="title">{title}</div>
           <div className="content">{content}</div>
         </div>
