@@ -12,7 +12,10 @@ const CompanyCard = ({ logoLocation, title, content, ctaLabel, ctaLink }) => {
         </div>
 
         <a href={ctaLink} target="_blank" className="cta-button">
-          {ctaLabel}
+          <span className="label">{ctaLabel}</span>
+          <span className="arrow">
+            <img src="/common/arrow-black.svg" />
+          </span>
         </a>
       </div>
     </>

@@ -28,12 +28,24 @@
   .content {
     font-weight: 300;
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.8rem;
   }
 
   .cta-button {
     text-decoration: none;
     color: black;
+    display: flex;
+    align-self: center;
+    align-items: center;
+
+    .label {
+      padding-right: .5rem;
+    }
+    .arrow {
+      display: flex;
+      align-items: center;
+    }
+
   }
 }
