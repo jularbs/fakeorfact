@@ -17,8 +17,7 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/scss/nextjs-argon-dashboard-pro.scss?v1.1.0";
 import "assets/scss/user-defined.scss";
 
-import Footer from "components/Frontend/Footer";
-
+import FrontendHeader from "components/Headers/FrontendHeader";
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
@@ -42,12 +41,11 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>MBC Media Group</title>
+          <title>{process.env.APP_NAME}</title>
         </Head>
         <Layout>
+          <FrontendHeader />
           <Component {...pageProps} />
-
-          <Footer></Footer>
         </Layout>
       </React.Fragment>
     );

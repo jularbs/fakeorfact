@@ -13,7 +13,8 @@ module.exports = withFonts(
       withSass(
         withTM({
           env: {
-
+            DOMAIN: process.env.DOMAIN,
+            APP_NAME: process.env.APP_NAME
           },
           webpack5: false,
           webpack(config, options) {

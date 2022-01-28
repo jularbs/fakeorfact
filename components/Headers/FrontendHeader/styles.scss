@@ -1,12 +1,17 @@
 .frontend-header-container {
-  background-color: white;
-  height: 65px;
+  background-color: #0C50BA;
+  color: white;
+  height: 70px;
 
   padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  position: fixed;
+  width: 100vw;
+  top: 0;
+z-index: 1000;
   .logo {
     height: 50px;
   }

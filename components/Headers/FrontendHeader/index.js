@@ -12,8 +12,6 @@ const FrontendHeader = () => {
             <li>Our Story</li>
             <li>Our Company</li>
             <li>Our Business</li>
-            <li>Collaborate With Us</li>
-            <li>Contact Us</li>
           </ul>
         </nav>
         {/* Mobile Navigation */}
