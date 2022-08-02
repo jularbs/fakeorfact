@@ -12,10 +12,12 @@ const FrontendHeader = () => {
             <li>About Us</li>
             <li>Our Stations</li>
           </ul>
-          <div className="button-link">
-            Visit News Website
-            <img src="/common/arrow-black.svg" />
-          </div>
+          <a href="https://radyonatin.com/" target="_blank">
+            <div className="button-link">
+              Visit News Website
+              <img src="/common/arrow-black.svg" />
+            </div>
+          </a>
         </nav>
         {/* Mobile Navigation */}
       </div>
