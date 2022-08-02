@@ -62,24 +62,27 @@
     color: black;
     .image-wrapper {
       width: 100%;
-      img {
-        width: 100%;
-      }
+      height: 250px;
+      background-size: cover;
     }
+
     .text-wrapper {
       padding: 1.5rem;
       .name {
-        font-size: 0.9rem;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
         font-weight: 600;
+        margin-bottom: 8px;
       }
 
       .handle {
         color: #898989;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
       }
       .content {
         padding: 1rem 0;
-        font-size: 1.2rem;
+        font-size: .9rem;
       }
 
       .meta {
@@ -91,10 +94,11 @@
         .likes {
           display: flex;
           align-items: center;
+          justify-content: center;
 
           svg {
-            font-size: 1.3rem;
-            margin-right: 3px;
+            margin-left: 3px;
+            font-size: 1rem;
           }
         }
       }

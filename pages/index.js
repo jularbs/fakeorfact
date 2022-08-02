@@ -1,17 +1,15 @@
 import React from "react";
-import Link from "next/link";
 // reactstrap components
 
 // core components
 import NewsDesk from "components/Sections/NewsDesk";
 import AboutUsSection from "components/Sections/AboutUsSection";
-import HeroStation from "components/FrontendHybrid/HeroStation";
-
+import HeroBasic from "components/Frontend/HeroBasic";
 function Index() {
   return (
     <>
       <div className="main-content">
-        <HeroStation></HeroStation>
+        <HeroBasic black />
         <NewsDesk />
         <AboutUsSection />
       </div>

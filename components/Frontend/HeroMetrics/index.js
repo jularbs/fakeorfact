@@ -74,7 +74,7 @@ const HeroMetrics = forwardRef(({ next }, myRef) => {
             <span className="odometer figures" id={item.id}>
               {item.figures}
             </span>
-            <div className="figures" style={{ paddingTop: "5px" }}>
+            <div className="figures" style={{ paddingTop: "3px" }}>
               {item.suffix}
             </div>
           </div>

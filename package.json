@@ -28,6 +28,7 @@
     "bootstrap": "4.6.0",
     "chart.js": "2.9.4",
     "classnames": "2.2.6",
+    "date-fns": "^2.29.1",
     "dropzone": "5.7.2",
     "file-loader": "^6.2.0",
     "froala-editor": "^4.0.6",
