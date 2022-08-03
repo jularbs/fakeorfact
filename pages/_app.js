@@ -18,6 +18,7 @@ import "assets/scss/nextjs-argon-dashboard-pro.scss?v1.1.0";
 import "assets/scss/user-defined.scss";
 
 import FrontendHeader from "components/Headers/FrontendHeader";
+import RadioPlayer from "components/Sections/RadioPlayer";
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
@@ -47,6 +48,7 @@ export default class MyApp extends App {
           <FrontendHeader />
           <Component {...pageProps} />
         </Layout>
+        <RadioPlayer />
       </React.Fragment>
     );
   }

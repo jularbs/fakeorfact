@@ -36,9 +36,9 @@ const HeroBasic = forwardRef(({ data, black, blue, next }, myRef) => {
           </div>
         </div>
 
-        <div className="arrow-placement">
+        {/* <div className="arrow-placement">
           <div className="arrow-wrapper" onClick={scrollNext} />
-        </div>
+        </div> */}
       </div>
     </>
   );

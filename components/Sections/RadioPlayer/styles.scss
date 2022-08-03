@@ -1,0 +1,33 @@
+.radio-player-container {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(31, 31, 153, 1);
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    .live-placeholder {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      background-color: #E62917;
+      color: white;
+      padding: 0 2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .title {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+  }
+}
