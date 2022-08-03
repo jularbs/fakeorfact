@@ -7,17 +7,20 @@
 
   display: flex;
   justify-content: space-between;
-
   color: white;
 
-  .content-wrapper {
+  z-index: 700;
+
+  .content-wrapper,
+  .control-wrapper {
     display: flex;
     align-items: center;
+
     .live-placeholder {
       display: flex;
       align-items: center;
       height: 100%;
-      background-color: #E62917;
+      background-color: #e62917;
       color: white;
       padding: 0 2rem;
       font-size: 1.8rem;
@@ -25,9 +28,117 @@
     }
 
     .title {
-        padding: 0 1rem;
-        font-size: 1.2rem;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+
+    .share-button {
+      display: flex;
+      align-items: center;
+      padding: 0 2.5rem;
+      padding-right: 2rem;
+      border-left: 1px rgba(95, 165, 246, 1) solid;
+      border-right: 1px rgba(95, 165, 246, 1) solid;
+      height: 100%;
+
+      span {
+        font-size: 1.1rem;
         font-weight: 300;
+        margin-right: 10px;
+      }
+    }
+
+    .volume-control-wrapper {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      .icon__volume {
+        font-size: 2rem;
+        margin-right: 1.5rem;
+      }
+
+      //style range
+      input[type="range"] {
+        -webkit-appearance: none;
+        margin: 18px 0;
+        width: 100%;
+        cursor: pointer;
+
+      }
+      input[type="range"]:focus {
+        outline: none;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        background: white;
+      }
+      input[type="range"]::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        background: white;
+      }
+      input[type="range"]:focus::-webkit-slider-runnable-track {
+        background: white;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        background: #ffffff;
+        -webkit-appearance: none;
+        margin-top: -7.5px;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        height: 15px;
+        width: 15px;
+        border-radius: 20px;
+        background: #ffffff;
+      }
+
+      input[type="range"]::-ms-track {
+        width: 100%;
+        height: 1px;
+        background: transparent;
+        border-color: transparent;
+        border-width: 16px 0;
+        color: transparent;
+      }
+
+      input[type="range"]::-ms-fill-lower {
+        background: white;
+      }
+      input[type="range"]::-ms-fill-upper {
+        background: white;
+      }
+
+      input[type="range"]::-ms-thumb {
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        background: #ffffff;
+      }
+      input[type="range"]:focus::-ms-fill-lower {
+        background: white;
+      }
+      input[type="range"]:focus::-ms-fill-upper {
+        background: white;
+      }
+
+      .volume-input-wrapper {
+        margin-left: 10px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
     }
   }
 }
