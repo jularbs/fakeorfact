@@ -1,6 +1,7 @@
 import React from "react";
 import App from "next/app";
 import Head from "next/head";
+import MainHeader from "../components/Headers/MainHeader";
 
 // plugins styles from node_modules
 import "react-notification-alert/dist/animate.css";
@@ -17,8 +18,7 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/scss/nextjs-argon-dashboard-pro.scss?v1.1.0";
 import "assets/scss/user-defined.scss";
 
-import FrontendHeader from "components/Headers/FrontendHeader";
-import RadioPlayer from "components/Sections/RadioPlayer";
+
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {};
@@ -45,10 +45,9 @@ export default class MyApp extends App {
           <title>{process.env.APP_NAME}</title>
         </Head>
         <Layout>
-          <FrontendHeader />
+          <MainHeader />
           <Component {...pageProps} />
         </Layout>
-        <RadioPlayer />
       </React.Fragment>
     );
   }
