@@ -1,0 +1,54 @@
+.store-front-container {
+  width: 100%;
+  overflow: hidden;
+//   background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+
+  .store-item {
+    background-color: white;
+    .item-image {
+      width: 100%;
+      padding-top: 75%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .details {
+        padding: .5rem;
+    .item-name {
+      color: black;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .item-cost {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 0.9rem;
+      color: black;
+      .__icon {
+        margin-right: 4px;
+        color: rgb(255, 181, 48);
+      }
+    }
+
+    .item-redeem {
+      background-color: rgba(0, 96, 215, 1);
+      border-radius: 5px;
+      padding: 5px;
+      margin-top: 8px;
+      color: white;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    }
+
+  }
+}

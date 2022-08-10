@@ -4,12 +4,13 @@ import React from "react";
 // core components
 
 import NewsCard from "../components/Frontend/NewsCard";
+import StoreFront from "../components/Frontend/StoreFront";
 function Index() {
   return (
     <>
       <div className="main-content">
-        <NewsCard />
-        
+        {/* <NewsCard /> */}
+        <StoreFront />
       </div>
     </>
   );

@@ -66,13 +66,24 @@
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
+    z-index: 150;
+    cursor: pointer;
     &.green {
-      background-color: rgba(37, 206, 175, 1);
+      border: 3px rgba(37, 206, 175, 1) solid;
+      background-color: transparent;
+
+      &.active {
+        background-color: rgba(37, 206, 175, 1);
+      }
     }
 
     &.red {
-      background-color: rgba(235, 43, 80, 1);
+      border: 3px rgba(235, 43, 80, 1) solid;
+      background-color: transparent;
+
+      &.active {
+        background-color: rgba(235, 43, 80, 1);
+      }
     }
   }
 }
@@ -83,6 +94,7 @@
   justify-content: center;
   position: relative;
   .button-nav {
+    cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
@@ -130,8 +142,9 @@
       box-sizing: border-box;
 
       &.active {
-        width: 14px;
-        height: 14px;
+          width: 12px;
+          border: 2px white solid !important;
+          height: 12px;
       }
       &.red {
         background-color: rgba(235, 43, 80, 1);

@@ -4,10 +4,11 @@ body {
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(
     30deg,
-    rgba(5, 40, 106, 1) 20%,
+    rgba(5, 40, 106, 1) 30%,
     rgba(0, 96, 215, 1)
   );
-}
+  background-attachment: fixed;
+} 
 
 .main-content {
   max-width: 500px;
